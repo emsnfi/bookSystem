@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="904959d6646140dd9c415641222eedcb" Name="Diagram1">
+        <EntityTypeShape EntityType="MyForumModel.Album" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyForumModel.Article" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyForumModel.Member" Width="1.5" PointX="0.625" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MyForumModel.Message" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <AssociationConnector Association="MyForumModel.FK_Album_ToMember" ManuallyRouted="false" />
+        <AssociationConnector Association="MyForumModel.FK_Article_ToMember" ManuallyRouted="false" />
+        <AssociationConnector Association="MyForumModel.FK_Message_ToArticle" ManuallyRouted="false" />
+        <AssociationConnector Association="MyForumModel.FK_Message_ToMember" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MyForumModel.Book" Width="1.5" PointX="0.625" PointY="1.125" />
+        <AssociationConnector Association="MyForumModel.BookMember" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div>
+    @if (Model != null)
+    {
+        <table>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            書籍編號 :
+                        </td>
+                        <td>
+                            @item.Id
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            書籍名稱 :
+                        </td>
+                        <td>
+                            @item.name
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                             作者 :
+                        </td>
+                        <td>
+                            @item.author
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            發表時間 :
+                        </td>
+                        <td>
+                            @item.time
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            發表人 :
+                        </td>
+                        <td>
+                            @item.Account
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            -------------
+                        </td>
+                        <td>
+                            -----------------------------------
+                        </td>
+                    </tr>
+                    <tr></tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+<div>
+    @Html.ActionLink("新增書籍", "Create")
+</div>
